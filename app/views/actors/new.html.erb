@@ -1,24 +1,37 @@
-<div >
-	<h1>Crear Actores</h1>
-	<%= form_for @actor do |f| %>
-          <% if @actor.errors.any? %>                   
-             <ul>
-             <% @actor.errors.full_messages.each do |msg| %>
-               <li><%= msg %></li>
-             <% end %>
-             </ul>                   
-          <% end %>
-            <div>
-          	 <%= f.text_field :name, placeholder:"Ingresa el nombre del actor" %>
-            </div>  
-            <div>
-          	 <%= f.url_field  :image_url, placeholder: "Ingresa la url de la foto del actor" %>
-            </div>
-            <div>
-          	 <%= f.text_area  :bio, placeholder: "Breve biografia del actor" %>
-            </div>      
-            <div>
-              <%= f.submit "Crear Actor" %>
-            </div>    
-	<% end %>
-</div>
+<%= form_for @actor do |f| %>
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div>
+    <%= f.label :bio %>
+    <%= f.text_area :bio %>
+  </div>
+  <div>
+    <%= f.label :birth_date %>
+    <%= f.date_field :birth_date %>
+  </div>
+  <div>
+    <%= f.label :birth_place %>
+    <%= f.text_field :birth_place %>
+  </div>
+  <div>
+    <%= f.label :image_url %>
+    <%= f.url_field :image_url %>
+  </div>
+  <div>
+    <%= f.check_box :alive %>
+    <%= f.label :alive %>
+  </div>
+  <div>
+    <%= f.label :death_date %>
+    <%= f.date_field :death_date %>
+  </div>
+  <div>
+    <%= f.label :death_place %>
+    <%= f.text_field :death_place %>
+  </div>
+  <div>
+    <%= f.submit "Crear Actor" %>
+  </div>
+<% end %>
