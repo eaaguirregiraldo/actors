@@ -367,3 +367,518 @@ Processing by ActorsController#index as HTML
   [1m[35mActor Load (1.0ms)[0m  SELECT "actors".* FROM "actors"
   Rendered actors/index.html.erb within layouts/application (11.0ms)
 Completed 200 OK in 429ms (Views: 426.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/actors" for ::1 at 2016-01-13 14:24:44 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ActorsController#index as HTML
+  [1m[35mActor Load (0.0ms)[0m  SELECT "actors".* FROM "actors"
+  Rendered actors/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 282ms (Views: 262.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/actors" for ::1 at 2016-01-13 14:25:18 -0500
+Processing by ActorsController#index as HTML
+  [1m[36mActor Load (0.0ms)[0m  [1mSELECT "actors".* FROM "actors"[0m
+  Rendered actors/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/actors" for ::1 at 2016-01-13 14:25:23 -0500
+Processing by ActorsController#index as HTML
+  [1m[35mActor Load (0.0ms)[0m  SELECT "actors".* FROM "actors"
+  Rendered actors/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 54ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/actors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-01-13 14:25:23 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2016-01-13 14:25:23 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-01-13 14:25:23 -0500
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2016-01-13 14:25:23 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-13 14:25:23 -0500
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-01-13 14:25:23 -0500
+
+
+Started GET "/assets/actors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-13 14:25:23 -0500
+
+
+Started GET "/" for ::1 at 2016-01-13 14:28:03 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/railties-4.2.0/lib/rails/templates/rails/welcome/index.html.erb (4.0ms)
+Completed 200 OK in 45ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/actors" for ::1 at 2016-01-13 14:28:10 -0500
+Processing by ActorsController#index as HTML
+  [1m[35mActor Load (1.0ms)[0m  SELECT "actors".* FROM "actors"
+  Rendered actors/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 233ms (Views: 229.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/actors/new" for ::1 at 2016-01-13 14:48:26 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ActorsController#new as HTML
+Completed 500 Internal Server Error in 51ms
+
+ActionView::MissingTemplate (Missing template actors/new, application/new with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "d:/makeitreal/actors/app/views"
+):
+  actionview (4.2.0) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.0) lib/action_view/lookup_context.rb:121:in `find'
+  c:in `find_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.0) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.0) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.0) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.0) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  c:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.1) lib/rack/etag.rb:24:in `call'
+  rack (1.6.1) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.1) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  c:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  c:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  c:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (72.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (5.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (72.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (161.0ms)
+
+
+Started GET "/actors/new" for ::1 at 2016-01-13 14:49:20 -0500
+Processing by ActorsController#new as HTML
+  Rendered actors/new.html.erb within layouts/application (31.0ms)
+Completed 500 Internal Server Error in 35ms
+
+ActionView::Template::Error (undefined method `url' for #<Actor:0x6f381a8>):
+    12:           	<%= f.text_field :name, placeholder:"Ingresa el nombre del producto" %>
+    13:           
+    14:           
+    15:           	<%= f.url_field :url, placeholder: "Ingresa la url del producto" %>
+    16:           
+    17:           
+    18:           	<%= f.text_area :description, placeholder: "Ingresa la descripción del producto" %>
+  app/views/actors/new.html.erb:15:in `block in _app_views_actors_new_html_erb___520848378_58283556'
+  app/views/actors/new.html.erb:3:in `_app_views_actors_new_html_erb___520848378_58283556'
+
+
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (72.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (69.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (153.0ms)
+
+
+Started GET "/actors/new" for ::1 at 2016-01-13 14:50:31 -0500
+Processing by ActorsController#new as HTML
+  Rendered actors/new.html.erb within layouts/application (20.0ms)
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error (undefined local variable or method `form_title' for #<#<Class:0x6c723f0>:0x6b5fb48>):
+    21:             
+    22:           
+    23:           
+    24:           	<%= f.submit form_title %>
+    25:           
+    26: 	<% end %>
+    27: </div>
+  app/views/actors/new.html.erb:24:in `block in _app_views_actors_new_html_erb___520848378_56292924'
+  app/views/actors/new.html.erb:3:in `_app_views_actors_new_html_erb___520848378_56292924'
+
+
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (78.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (67.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (152.0ms)
+
+
+Started GET "/actors/new" for ::1 at 2016-01-13 14:51:19 -0500
+Processing by ActorsController#new as HTML
+  Rendered actors/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 228ms (Views: 227.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-01-13 14:51:20 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2016-01-13 14:51:20 -0500
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2016-01-13 14:51:20 -0500
+
+
+Started GET "/assets/actors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-01-13 14:51:20 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-13 14:51:20 -0500
+
+
+Started GET "/assets/actors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-13 14:51:20 -0500
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-01-13 14:51:20 -0500
+
+
+Started GET "/actors/new" for ::1 at 2016-01-13 14:53:10 -0500
+Processing by ActorsController#new as HTML
+  Rendered actors/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 66ms (Views: 65.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-01-13 14:53:10 -0500
+
+
+Started GET "/assets/actors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-13 14:53:10 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-13 14:53:10 -0500
+
+
+Started GET "/assets/actors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-01-13 14:53:10 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2016-01-13 14:53:10 -0500
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2016-01-13 14:53:10 -0500
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-01-13 14:53:11 -0500
+
+
+Started GET "/actors/new" for ::1 at 2016-01-13 14:54:39 -0500
+Processing by ActorsController#new as HTML
+  Rendered actors/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 68ms (Views: 67.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-01-13 14:54:39 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-13 14:54:39 -0500
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2016-01-13 14:54:39 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2016-01-13 14:54:39 -0500
+
+
+Started GET "/assets/actors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-13 14:54:39 -0500
+
+
+Started GET "/assets/actors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-01-13 14:54:39 -0500
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-01-13 14:54:39 -0500
+
+
+Started GET "/actors/new" for ::1 at 2016-01-13 14:57:48 -0500
+Processing by ActorsController#new as HTML
+  Rendered actors/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 68ms (Views: 67.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-01-13 14:57:48 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-13 14:57:48 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2016-01-13 14:57:48 -0500
+
+
+Started GET "/assets/actors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-13 14:57:48 -0500
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2016-01-13 14:57:48 -0500
+
+
+Started GET "/assets/actors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-01-13 14:57:48 -0500
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-01-13 14:57:48 -0500
+
+
+Started GET "/actors" for ::1 at 2016-01-13 14:59:31 -0500
+Processing by ActorsController#index as HTML
+  [1m[35mActor Load (0.0ms)[0m  SELECT "actors".* FROM "actors"
+  Rendered actors/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 74ms (Views: 74.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/actors/new" for ::1 at 2016-01-13 15:05:42 -0500
+Processing by ActorsController#new as HTML
+  Rendered actors/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 72ms (Views: 64.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/actors" for ::1 at 2016-01-13 15:06:31 -0500
+Processing by ActorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uS1M6Zg/hGxtxiA1MD23VsmmLrTzHOenS29MsTTgj12SVR6FEMdfGO6Kp2KWqxvb+YzfKNiBvvr+1Y4Aw7TEKQ==", "actor"=>{"name"=>"pepito", "image_url"=>"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTExMWFhUVFhUYGRUVFRUVFxcVFhUWFhUaFRYYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0fGB0tKysrLSstKy0tKy0tLS0tLS0tLS0rLS0tKy0tLS0tLSsrLS0tLS0tKystNysrKysrK//AABEIAP0AqwMBIgACEQEDEQH/xAAcAAAABwEBAAAAAAAAAAAAAAAAAQIEBQYHAwj/xAA+EAABAwIDBQUECQMDBQAAAAABAAIDBBEFITEGEkFRYQcicYGRE6GxwSMyQlJictHh8BQzUxWS8UNjgrLC/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAIDAQQF/8QAIxEAAgIDAAICAgMAAAAAAAAAAAECEQMhMRJBBFEiYRMycf/aAAwDAQACEQMRAD8A01BGgrkgBLCSEoIACNBBABIIIkAKRppVVjIwS4gAak8FFy7SMF91j3W1uGsAHM3zaOpCxsCfQVbods6eR265r2fjIvH5vGQVibIDoR5FFoA0oIiEYWgKCNAIIAJBGUSwAwjRBGEAHZHZBCyAGaCIOujWgGEpI3glBw5oANMcSxiCD+7IGn7ubnHwaMyqp2hbesobQx9+ZwJNjYRjhc55k+4eCxPEcSmqHl8jrkm/EN9OfjmklP6GUbN+j27oS7d9qWn8bS0e/RR+0211M6LcZMCXb1t0kXIHdsePet6LEImubrwzzCKorC/LQD0A6JPNjeCLli+20jrWObQLO13XDVw4X5HgoCqxyWS1y4gZ3c7mdfHqo+PdtlqeJOZ8BwHUpdS9rbAHPiT+iUah3LiEhBvK8Zab7rW8NE2psRcw3a4m3A2c024EHIhR8so4XPUrmLooDVdl+0/2Zaydh3DkSCTu8i0OzA5tuei1jDMQiqGCSGRr2ni0g+vJeVATz96lMJxF8Dt+OR0bxazm6+duCZSaFcT1GEZWebDdobZ92Cp7spNmyC3s330BI+q74rQrqqlYgCiRkjmi3hzQYKARog4IwgA0EaCAKN2fzufE4ucSb8VbVTuzj+0/8yuK1cBlI2+qHsfHuuI10KgKHaE04fK95Iaw2BdqeACme0f68fn8lkm01a5zgzgM7fD+fopyY8URuJYg+eV80hG883I4DkB0C5w1JGV/cmTgjakHJN17b17HhyKYPdbTRd4X3yPxSaloGgWAHRy2cCc+PkM7eq5xP3n3fpqbceg81yYSPQj1QAOgWgSAcCC4ABrdT1OgC4CQO4kDhYXJ/RKlgNgwaN16uOqbm97aD+aoAcCO+lh4n4ot232mnwS2vaRY3y5ZriZG8BlzJ+SAHtLO5rgQbG4PTLRax2dbVl83s55C4uFmmxsTyPVYtv25qUwzEXMcHA5gg3HMZ5oToxqzXcfr5WzPAe4AHgVEf6tPf+471XBuLiqBk+0bbw62+Cu2wdDHJE4uYCd46hOqYjK5Fic3+R3qtLwF5MDCTc2ShhMP+NvonkUYaLNFgE6VGC0EEaDCg9m/9p/5lcVT+zf+0/8AMrghAygdpJAdGTyPwWJ4pUFz3H7xv+3otg7Xagsa0jWxHrZYjK651U5dKREXR2RNXaKIuNhqlGEsJTncNr3vzzUjT4G865KUo9myTmVJ5IoqsUmV2NgIvkenFL9kN0EXvfLwVvOzDSO6CCOPPkurNnDZotp08P0S/wAyG/hZXKGi9oXDgGuPpqVFTULszY7uefQfwLSMPwAtF+vLna48P0XLGcIJIFrNbyHxQsgPEZ4+nIZr/PkuPs7ZDM68gPFTdZhbycr2zTE4e8DMEA+8KimmTeNoZ7tx+miQ07p5J6+C2mSbPATCE3gFYWvFnZGwIV7w/GZoAWxusCbrM8MADhfmFtuxeBQVEbnPFyDYZ9E8RZDSDaSpJF38RwWmUriWNJ4gKFZsnTDRp9VOxsAAA4J0qEFoIILTDItmdp2UjHNc0m5vkplnaHEXAezdmQPVRz9gZz9tvouTOz6cOa7fGRB05FZTG0ce2Kb6Jh5j42WMPW29sOHO/pGyfc3R5lYkUkujRCjVpwOnFvq26nUqrxaq2YK5Qy8OjCrZYGsACeUhTaMZXXSMELhbO9Im4k8jA9VFU0+ifGTRCYNEnHEbXQdHzCSKjIBJNQqWJRyko2fdHoFD4hgzHC1lNPkXF2eqyza0Z7iWzTgSW3sqxV05jNitqe0ELNNtKUNfcaFXxzdnNlgqtFbgkcDktj2F2qZT04D2kk55LJcJpDJK1gtdxAzyGa1jDdh5/ZtsN3W4drddcTjkWtm3UR+w5WegqhKxrwLAhZ4zYqo5tV/wemdHCxjtQE+xGPQgggtMGiIo0RWgVntIhY7Dane+zG4j82Vl5scF6M7Vav2eGz/j3Y/97rfC687OFrhSn0pFasRHqrNhNxmoDD4t54Vup4AMuC58r0dWFeycpR3F2gbwR0T2W3bhOWMF9VxNHYpHSCNPI2ElcIzZPqCxuVsUM2LCMFKkcL2Q3bZlNQtnNzVzK6ueue6kNASs+21GYC0AtVH29i3dx3Wyvi6c+XjKrhs5jka8fYc12XIEFep8PnbJFHI3Nr2tcCORAK8rUre9bgTxNuPNejezgOGG0ocCCIwM9bAmy7YPZwTWrLKEaII1UmBHZEEaAGaCCC0Ckdr8Rdh5AH/UYfS6wSdmduRXpTbin36OTm3cd6OHyJXnfGacMnkaOBIXPkdTOrGrxgwiGzr8ApLEJng93mu9BRhseepCf0tLvAENBI48x8lCcldloR0QLP6gd7MjolHHpm5F1vFTH+hvkefauLRwa02HuSzsRH9/3j3rU4vpjjJcGNBtO+9nHJWvB8T3hr6KmYlsq9rvoiCLaE5+qcbOmaKURvAtlop5Ixq4lMbknUi9ySuvc6BNcQxgRm5N/wBlMNYDGb8VnuKYVUuJt9W5txNuvJSirLSdInnbXxgLk7a3eyDfU5KsO2YnNt11zYZW0PLNPqDCamPN1Ox4B8HfGyv4Ro5/OTeydw3aTedYjj/LJp2iC8cVuJPyT/DYoZBcMLXA5hws4HiFz21oy6KLdF7OIt+bRZFqzZrRDbPbOuewSkd2/uBuSvQmHsDY2ACwDG5DwVBwOhu2OLS+6CP/AG+BWitFshoFb4zbbkR+TUVGIYRogjXUcYAjQCCAGaCCC0BritN7WGWMavY4DxIy99l5pxiNwe57m2JdYj8Q1XqALC+13DDBUDdFmSXkb46OA8D8VHLHki+GXY/Ywjn3vCw94Unh8tlX8Id3Wg/dH6KepQuDLpnfi2idhhDxqQfK3oUoUeeefkEMPksnck2qRFWiPqo2NaTbqq7F/dB6qcrJm2Oe94KNpIQ92lrFFsykWuF12JqyEHJOmsswBcWtsb3W8Bqwv6Mj6riOmqUze4n0BTyN1x8wlboC0zxI90DL/Vz52z9U8jgjdub+jHNcPFpu33pvIc04gz4XA48uXisT6ZKJObOQkz3PAOd4XyHzVtUNszD3DIdXZZ8m/uT6KaC9DBGof6ed8iXlMARoIKxANBEjQAzQQQWgGofajZyGvh9lMCLG7Xt+sx3MfopgI0dNTo874rQf0s8kIdvexO5vWte3G3mnVBUi1yum2wtX1QP+Q+8AqMmpTuRkEgl3yXm5opuj08EvxLLBVgcUl9UZONmfHwUFUh7W8QOJ+Q6o4Ko6BSUC7lY9dWMbM5l7d1pAPM3v8k/wGoaXOuftFVvFsKM/fabPAt0NvgoPD6uSnks7eBGoN1VQTWiLm4va0bNvixz0XEkEKq0eISzi0VyeLtGt8TxPQKToaR8eb5S88tAElfY9oKpkfTneabxnUcuo6KTp8Sa4a66KPrcwRqDzUEwviOXejuPFhOl+iUdMuJddSuA4e+e4bYNBG87l4DiVWYKk3aOYPor5sG36OU/iaPcVTDFSlTI55uMbRZIIQxoY3RosF0QQC9JHlt2BGESNBgaCCCAGaCaGqCDaoIAeBGm7KgLq2QLQMU7U6Yx17zwkYx49N0+8KIBJpg9ufs3BxHTj7lo/a7gZmp21LBd9PvbwGpidbe9CL+ZWXbP4kGOMbrFr/TkQuPPD2duCeqLbAY5Y7EAteM/2VOxDBJmS7rJDuOPdJNrXOhKm8MmET3QHQd6M/gPDyXfEHXGa54NxOqlIiKLA6vvkSfUG9zBFyDb0Xd2HVJcGyUwmOvdydbyIKeYZWvj3rZ3FrHkf+Vb8NxZt7lu7kBf9wn69A1OK+0QVBNU7ns4qYMazUcud+N/Fd/6KtcL2jFxe1/QaZKztxiIFxHE3Ngcza3mq/X4pNI7dYNwZDrkeaxx+wUpy4qIBgqZpHRljGhuReDw6KX/0+zC06mwvzF7qRoKcRssNePUrhUTcP51Up16GTODWi9/JaLsXDu0wP33Od5CzR8Cs8oYzLI2Ngu55AA+Z6AXK1ukgEbGsGjQB6Lp+LD2cfyp+jqUAggu04gI0EEAGggEaAM8kxNE3EioQvQ3kllKLJHinVP6bEQeKpoeV2hqCCjyCi/Mq27pLrEAG4OlrZgrzNiLx7V26N0Fxc0DRtzcALTqzbASe0hiza0APk4bxP1Wc9DcrLcYZaQpZuxoKiUNeXsY/7cZ9Qdf18lZKd4lZ5KhQS+8eRVhwDEbWadR8Fy5IUrR1Y8lvZItY9p0uFI0dW9ulwurHgm481LUdGDwCjFtnU3SGAxCQ5Fxt0ACc00nIZ808dRtHBHCwDgtlZl2joTYaqErpbXz1UlWVAaM1FU9I6V2+/JvAc/2RRO9mibCYI2KJs7s5JG3H4GHgOp1J8lagmuHMDY2M+61txyyToL04qlR5k3bsBQQKC0UNBBBABo0QRoAx5EggpFRSrm1mNiJhiY76RwzI+y39Sl7SbQCAGOM3kPH7nj16KhSSF1yTcnO5zzQBcNjMNBiJfmHPJsMtAALlWKv2LhqYy1nclGbHXJBPAO6KF2DqQWOYdQQR4H9x71oNAMr8l0QhFoSUmjBsQo5IJHRStLHtNi0/LmOqRDUkEZrX+0rZwVMQnaPpIxYkalnXnZY5NC5hzHnwKhOHi6KRley04VjGfeVuosTBGTllMZI0JT2CtlGV/cuaWJejphlfGascSyzzTWfFmNHyVFhq5SM3fqpnAaBz3b77kDnx8FKq6WTvhNUjHSuDn6cB+qtWAUHtZmM4DvOPJjdfXRRlLESQ1rbuJsANSeAC0HC8MFLCW6yyZvcOH4R0CfDjc5fonmyKEf2yvbX4y6jqaeqF/ZOc6GVo4sJBabc25keJCukE7XtD2ODmuFw4aELOu1W39GOkjbehVY2K20fRuDX3dA6283UsOm8z5jivRnpnnLht5RptQVsc7BJE8PY7Rw+Y4HoU4SgGggggBQQQCNAGJVuIRQi8jwOmpPkM1V8X2tLgWwgtv9s/W8hoPFVuSQuNySTzJuublIqIe4k3OZ65lJSiEGhAE5spV+zmZycd0+By+NlseGaX48VhUeQ1/wCVtezFX7WCOT7zbO/MMj710YX6JzRYqdo0OYPAqo4/2eNeXPp2tIdrG7/5PBW6nNvD+e9S9DIFaUU1sRNo874zsVU013+yeWDW4u5vjbUdUxhw5xtujXivVgDSMxcdVT9pdiYHAvh3Ink/VOTHOPD8JPouDJD6OjFkV/kZJhuCAC8hufujTzVownDpJXBkTN53IZADmToApLBdjJXuLXvY0Ai+49srvd3W+Z8lpmFYVFTx7kbbczqXHmSdVzrDJu5cOnJ8iMV+PSKwDZ9lK3edZ8x1dwb0YOHjqV1qXXKkqs2UO+S5K9LBBRWjz5zcnbM97W5/o4mc3ONvBv7rNY33Ct/ajWb9SxnBkeY6vP6NCpTHWJCTL/YeHCXwPaOoo378L7feYc2OH4m/PVaTgXazTPs2pY6F33m3kj93eHosdeVyBU7Go9RYdiUM7d6GVkjebHA+vJO15ao62SFwdE9zHD7THFp92q0PZrtVmjsyrb7Vv+RthIPEaO9xW+QrRsYRqPwbGYKpntIJA9vG2RB5OacwVIJhTyGluCEI1K7FikVGpaukDOKVIF1tYIA5uPuWm9l1ZvRPj+44G34X3v7x71mQbdWjYGukjqWtjAJk7pa42DuIAPA5ZdVTG6kLNaNicC0cwulPVWPRJop2ytJZe4ycxws5p5Pbw8VwkbZdZEs1JWC1ycgL34WGpXn7tG2zdiVR3HObTxEiJoJG8eMjupytyHiVee0LF3U+HytabGW0YPGz/rW/8Q5YnSOzXNm0ykF7J/ZjGqmgnE0Ly3MbzXElkjeTx89QvSmy+0UNfTNnhORyc06seNWu/mYsV5dqTl71c+xDGHw1kkFz7OZlyOAe36p8SLjyU0t0bJaNtxKo4BMbZE/y6WW7zk9kis0nkF2KokTz5tnOX1sxPBwaPBot+qg3c+Se4pNvzSvP2pHn1cUzXJN3IuuCXpAalOyQalGEWQSnhBqDB7hmKzU7w+KRzHDi029eY6FX2n7W6kNAdFE4gZu7wv1sMgs2sliEoCkNHU5Bu0pTXkajz4fsnFkg2QaILLm6DxdAxEZtNunDy5IM0CACITjD6h0b2vb9ZhDh4tNx8E3clRu4hAHo6OnZUsZUR915YCHt1sRfdd95uuRXGVpv3gA4ajgfD9FD9k+Ke0pPZE96F27b8Du8zy1HkrbUMacyOhXZF2QZlnavh8kkMZa0ljC5zjydYNF+mZ9VklPk6y9Qy0UQZIJnfRCKTeL7WDCMyfC3wXmGVwdI4t+qCSCcu6DkfGyhmWx4MkaodwH5K0bBYTNEyCuy3HVO51AYQ256Elw8lT5pu6W7pFuduIvz5WW97E4Pv4NTxFti6MvsRY7xe57Slx/2Nk9Fsoorm/JIx6o3IXnkx59GkpzRtLWDeFnEAkdbaKu7f1W5Szn/ALRH+7uq927JmBg3zP8ALpBalcELLmZYQ5iS0WXZcy0nXILAEk3/AJr4JbYz5JbGWXQIASxtkRcut8kncCAOC5OXRzkgZoNDtkuQXYpFkAcyhGgUBkUAaJ2Q4h7OrdGdJYyB+Zh3h7i5a/PIRwuvOWB1roZ4pGfWZIw+OdiD4gkLXu1vHpKWhPssnTOEW/fNrXNJcW9bAi/VXxypEpLZnfahts6pkdTQu+gYbPIP914On5G6W4lUeCE7g/Ebk/hCYuKdRPJaMzYcOChKXkyiVIUwXa88yPLkvUmxeJipoaabi6FoPRzRuuHqF5eqBZjQOJJW2dhVa51DLGdIqhwb0D2NeR/uLj5podFmtGkb13LPO12t3abc4yPa3yaC4/JaA05nwWPds059rTs4bsjvPeDfgFeWosSO2UIaINR2ySQuYqLOnyRAWCInJKcgA2oy4cVyfJZc3DeOef7IAdEJBKDcgud0Af/Z", "bio"=>"Tom Cruise (born Thomas Cruise Mapother IV; July 3, 1962) is an American actor and filmmaker. Cruise has been nominated for three Academy Awards and has won three Golden Globe Awards. He started his career at age 19 in the 1981 film Endless Love. After portraying supporting roles in Taps (1981) and The Outsiders (1983), his first leading role was in the romantic comedy Risky Business, released in August 1983. Cruise became a full-fledged movie star after starring as Pete \"Maverick\" Mitchell in the action drama Top Gun (1986). Since 1996, he has been well known for his role as secret agent Ethan Hunt in the Mission: Impossible film series, whose most recent film, Mission: Impossible – Rogue Nation, was released in 2015."}, "commit"=>"Crear Actor"}
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant ActorsController::Product):
+  app/controllers/actors_controller.rb:9:in `create'
+
+
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (67.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (148.0ms)
+
+
+Started GET "/actors/new" for ::1 at 2016-01-13 15:06:56 -0500
+Processing by ActorsController#new as HTML
+  Rendered actors/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 63ms (Views: 55.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/actors" for ::1 at 2016-01-13 15:07:41 -0500
+Processing by ActorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"soVDSesxDj/hPw8RGnz3BWNimaVOTPCbues0V3iPtViZ/RElY8nVS2JziEa86luIU0hoOWXRqcYMUfbmj9v+LA==", "actor"=>{"name"=>"pepito", "image_url"=>"https://www.google.com.co/url?sa=i&rct=j&q=&esrc=s&source=imgres&cd=&cad=rja&uact=8&ved=0ahUKEwiR7bW1y6fKAhWIyyYKHZkQC2QQjRwICA&url=https%3A%2F%2Fplus.google.com%2Fu%2F0%2F111531279274981495194&psig=AFQjCNFp0fSOPQIM1gtCCf_VNhn9jjVwEg&ust=1452802023229892", "bio"=>"Tom Cruise (born Thomas Cruise Mapother IV; July 3, 1962) is an American actor and filmmaker. Cruise has been nominated for three Academy Awards and has won three Golden Globe Awards. He started his career at age 19 in the 1981 film Endless Love. After portraying supporting roles in Taps (1981) and The Outsiders (1983), his first leading role was in the romantic comedy Risky Business, released in August 1983. Cruise became a full-fledged movie star after starring as Pete \"Maverick\" Mitchell in the action drama Top Gun (1986). Since 1996, he has been well known for his role as secret agent Ethan Hunt in the Mission: Impossible film series, whose most recent film, Mission: Impossible – Rogue Nation, was released in 2015."}, "commit"=>"Crear Actor"}
+Completed 400 Bad Request in 1ms
+
+ActionController::ParameterMissing (param is missing or the value is empty: product):
+  app/controllers/actors_controller.rb:19:in `actor_params'
+  app/controllers/actors_controller.rb:9:in `create'
+
+
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (67.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (146.0ms)
+
+
+Started GET "/actors/new" for ::1 at 2016-01-13 15:08:12 -0500
+Processing by ActorsController#new as HTML
+  Rendered actors/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 61ms (Views: 55.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/actors" for ::1 at 2016-01-13 15:08:20 -0500
+Processing by ActorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2UyS2ownhkzpdgSLvZ01qoNnFICSYwPC9u1lYuC7UbLyNMC2BN9dOGo6g9wbC5kns03lHLn+Wp9DV6fTF+8axg==", "actor"=>{"name"=>"pepito", "image_url"=>"https://www.google.com.co/url?sa=i&rct=j&q=&esrc=s&source=imgres&cd=&cad=rja&uact=8&ved=0ahUKEwiR7bW1y6fKAhWIyyYKHZkQC2QQjRwICA&url=https%3A%2F%2Fplus.google.com%2Fu%2F0%2F111531279274981495194&psig=AFQjCNFp0fSOPQIM1gtCCf_VNhn9jjVwEg&ust=1452802023229892", "bio"=>"a"}, "commit"=>"Crear Actor"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "actors" ("name", "image_url", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "pepito"], ["image_url", "https://www.google.com.co/url?sa=i&rct=j&q=&esrc=s&source=imgres&cd=&cad=rja&uact=8&ved=0ahUKEwiR7bW1y6fKAhWIyyYKHZkQC2QQjRwICA&url=https%3A%2F%2Fplus.google.com%2Fu%2F0%2F111531279274981495194&psig=AFQjCNFp0fSOPQIM1gtCCf_VNhn9jjVwEg&ust=1452802023229892"], ["bio", "a"], ["created_at", "2016-01-13 20:08:20.142076"], ["updated_at", "2016-01-13 20:08:20.142076"]]
+  [1m[36m (237.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/actors
+Completed 302 Found in 251ms (ActiveRecord: 238.0ms)
+
+
+Started GET "/actors" for ::1 at 2016-01-13 15:08:20 -0500
+Processing by ActorsController#index as HTML
+  [1m[35mActor Load (0.0ms)[0m  SELECT "actors".* FROM "actors"
+  Rendered actors/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 54ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/actors/new" for ::1 at 2016-01-13 15:09:29 -0500
+Processing by ActorsController#new as HTML
+  Rendered actors/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 75ms (Views: 65.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/actors" for ::1 at 2016-01-13 15:09:53 -0500
+Processing by ActorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VaBpUTa31JYLFHN6WMYzecK/RYuM8qh5YSEzaSd5UnB+2Ds9vk8P4ohY9C3+UJ/08pW0F6dv8STUm/HY0C0ZBA==", "actor"=>{"name"=>"pepito", "image_url"=>"http://ia.media-imdb.com/images/M/MV5BMTk1MjM3NTU5M15BMl5BanBnXkFtZTcwMTMyMjAyMg@@._V1_UY317_CR14,0,214,317_AL_.jpg", "bio"=>"tom"}, "commit"=>"Crear Actor"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "actors" ("name", "image_url", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "pepito"], ["image_url", "http://ia.media-imdb.com/images/M/MV5BMTk1MjM3NTU5M15BMl5BanBnXkFtZTcwMTMyMjAyMg@@._V1_UY317_CR14,0,214,317_AL_.jpg"], ["bio", "tom"], ["created_at", "2016-01-13 20:09:53.505207"], ["updated_at", "2016-01-13 20:09:53.505207"]]
+  [1m[36m (213.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/actors
+Completed 302 Found in 229ms (ActiveRecord: 213.0ms)
+
+
+Started GET "/actors" for ::1 at 2016-01-13 15:09:53 -0500
+Processing by ActorsController#index as HTML
+  [1m[35mActor Load (1.0ms)[0m  SELECT "actors".* FROM "actors"
+  Rendered actors/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 59ms (Views: 58.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/actors/new" for ::1 at 2016-01-13 15:13:45 -0500
+Processing by ActorsController#new as HTML
+  Rendered actors/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 70ms (Views: 70.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/actors" for ::1 at 2016-01-13 15:14:25 -0500
+Processing by ActorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qSizRLb0zbi5zkV96sTC88dF/h9Rhjm5UjDutpjXDUeCUOEoPgwWzDqCwipMUm5+928Pg3obYOTniiwHb4NGMw==", "actor"=>{"name"=>"tom", "image_url"=>"http://ia.media-imdb.com/images/M/MV5BMTk1MjM3NTU5M15BMl5BanBnXkFtZTcwMTMyMjAyMg@@._V1_UY317_CR14,0,214,317_AL_.jpg", "bio"=>"tom 2"}, "commit"=>"Crear Actor"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "actors" ("name", "image_url", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "tom"], ["image_url", "http://ia.media-imdb.com/images/M/MV5BMTk1MjM3NTU5M15BMl5BanBnXkFtZTcwMTMyMjAyMg@@._V1_UY317_CR14,0,214,317_AL_.jpg"], ["bio", "tom 2"], ["created_at", "2016-01-13 20:14:25.990833"], ["updated_at", "2016-01-13 20:14:25.990833"]]
+  [1m[36m (254.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/actors
+Completed 302 Found in 260ms (ActiveRecord: 254.0ms)
+
+
+Started GET "/actors" for ::1 at 2016-01-13 15:14:26 -0500
+Processing by ActorsController#index as HTML
+  [1m[35mActor Load (0.0ms)[0m  SELECT "actors".* FROM "actors"
+  Rendered actors/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 55ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/actors/new" for ::1 at 2016-01-13 15:15:18 -0500
+Processing by ActorsController#new as HTML
+  Rendered actors/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 57ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/actors" for ::1 at 2016-01-13 15:15:33 -0500
+Processing by ActorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sU6QPJUApGrs+W+zXRnwIcszrVYXiQzaXa3QVPeKeLaaNsJQHfh/Hm+16OT7j1ys+xlcyjwUVYfoFxLlAN4zwg==", "actor"=>{"name"=>"tom", "image_url"=>"http://ia.media-imdb.com/images/M/MV5BMTk1MjM3NTU5M15BMl5BanBnXkFtZTcwMTMyMjAyMg@@._V1_UY317_CR14,0,214,317_AL_.jpg", "bio"=>"ok"}, "commit"=>"Crear Actor"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "actors" ("name", "image_url", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "tom"], ["image_url", "http://ia.media-imdb.com/images/M/MV5BMTk1MjM3NTU5M15BMl5BanBnXkFtZTcwMTMyMjAyMg@@._V1_UY317_CR14,0,214,317_AL_.jpg"], ["bio", "ok"], ["created_at", "2016-01-13 20:15:33.912742"], ["updated_at", "2016-01-13 20:15:33.912742"]]
+  [1m[36m (225.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/actors
+Completed 302 Found in 235ms (ActiveRecord: 226.0ms)
+
+
+Started GET "/actors" for ::1 at 2016-01-13 15:15:34 -0500
+Processing by ActorsController#index as HTML
+  [1m[35mActor Load (0.0ms)[0m  SELECT "actors".* FROM "actors"
+  Rendered actors/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 62ms (Views: 62.0ms | ActiveRecord: 0.0ms)
